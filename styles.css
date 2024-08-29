@@ -1,0 +1,96 @@
+/* Estilos Globais */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1a1a1a, #333333);
+    color: #f0f0f0;
+    overflow: hidden;
+}
+
+/* Container Principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.profile {
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    animation: pulse 2s infinite;
+}
+
+.profile img {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.verify-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.verify-btn:hover {
+    background-color: #e64a19;
+    transform: scale(1.05);
+}
+
+/* Notificação */
+.notification {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: #ff5722;
+    padding: 15px 25px;
+    border-radius: 8px;
+    display: none; /* Inicialmente oculto */
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    z-index: 9999; /* Garantir que a notificação esteja acima de outros elementos */
+}
+
+/* Animação de Pulso */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    }
+}

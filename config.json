@@ -1,0 +1,9 @@
+{
+    "token": "",
+    "clientId": "",
+    "clientSecret": "",
+    "guildId": "",
+    "verificationChannelId": "",
+    "verificationRoleId": "",
+    "redirectUri": "https://bielzmodz.github.io/OAuth2/"
+}

@@ -19,6 +19,6 @@ window.addEventListener('load', () => {
 
     // Adicionar o evento de clique para o botão de verificação
     document.querySelector('.verify-btn').addEventListener('click', function() {
-        window.location.href = 'https://seu-endpoint-de-oauth2.com';
+        window.location.href = 'https://discord.com/oauth2/authorize?client_id=${config.clientId}&response_type=code&redirect_uri=${encodeURIComponent(config.redirectUri)}&scope=identify%20guilds.join';
     });
 });
